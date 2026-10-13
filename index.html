@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark St Geme - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mark St Geme</h1>
+    <p>Cybersecurity Student at Northern Arizona University</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Mark St Geme. I am a Cybersecurity
+        student at Northern Arizona University. I am interested
+        in protecting computers, networks, programs, and data
+        from digital attacks, theft, and damage.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div id="educationTable"></div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div id="experienceTable"></div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <ul id="skillsList">
+        <li>C++</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Networking</li>
+        <li>Linux</li>
+        <li>Visual Studio Code</li>
+        <li>Problem Solving</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Time Management</li>
+    </ul>
+
+    <h3>Add a New Skill</h3>
+
+    <form id="skillForm">
+        <input
+            type="text"
+            id="skillInput"
+            placeholder="Enter a new skill"
+            required
+        >
+        <button type="submit">Add Skill</button>
+    </form>
+
+    <p id="skillMessage" aria-live="polite"></p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div id="projectsList"></div>
+</section>
+
+<section id="resume">
+    <h2>My Resume</h2>
+    <p>Download my resume using the button below.</p>
+
+    <a
+        href="resume.pdf"
+        download="Mark_St_Geme_Resume.pdf"
+        id="resumeDownload"
+        class="button"
+    >
+        Download Resume
+    </a>
+
+    <p>
+        Resume Download Clicks:
+        <strong id="downloadCount">0</strong>
+    </p>
+</section>
+
+<section id="customization">
+    <h2>Customize My Portfolio</h2>
+
+    <button id="themeToggle" type="button">
+        Switch to Dark Mode
+    </button>
+
+    <h3>Change Font Size</h3>
+
+    <label for="fontSize">Font Size:</label>
+    <select id="fontSize">
+        <option value="16">Normal</option>
+        <option value="18">Large</option>
+        <option value="20">Extra Large</option>
+    </select>
+
+    <h3>Change Background Color</h3>
+
+    <label for="backgroundColor">Choose Color:</label>
+    <input
+        type="color"
+        id="backgroundColor"
+        value="#f4f4f4"
+    >
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Thank you for visiting my portfolio!
+        I am interested in cybersecurity, computers,
+        networking, and programming.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Mark St Geme. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
